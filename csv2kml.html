@@ -1,0 +1,9 @@
+<form enctype="multipart/form-data" action="csvuploader.php" method="POST">
+<p>Convert a .csv text file to a .kml file for use with Google Earth or Google Maps.<br></p>
+<p>  Required file format: LocationName, Longitude, Latitude, Marker code (optional)<br>
+    Values should be decimals (e.g. 45.234134) not dms (e.g. 45.23'18").<br>
+    Marker codes: 1=green, 2=red, 3=purple, 4=yellow, blank or anything else=blue</p>
+<input type="hidden" name="MAX_FILE_SIZE" value="100000" />
+Choose a file to convert (100KB max): <input name="uploadedfile" type="file" /><br />
+<input type="submit" value="Upload File" />
+</form>
